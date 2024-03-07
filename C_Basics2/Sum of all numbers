@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int a,i,sum=0;
+	printf("Enter an integer number:\n");
+	scanf("%d",&a);
+	for( i=0;i<=a;i++){
+		sum+=i;
+	}
+	printf("Sum of numbers from 1 to %d = %d\n",a,sum);
+
+	return EXIT_SUCCESS;
+}
