@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int a;
+	printf("##########Console-output###\n");
+	printf("Enter an integer:");
+	scanf("%d", &a);
+
+	printf("Your number is: %d",a);
+	return EXIT_SUCCESS;
+}
