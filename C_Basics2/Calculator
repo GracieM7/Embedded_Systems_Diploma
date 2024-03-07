@@ -1,0 +1,57 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    float a, b, d;
+    char c;
+
+    printf("Enter 2 numbers:\n Enter an operand (+, -, *, /): ");
+    scanf("%f %f %c", &a, &b, &c);
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    float a, b, d;
+    char c;
+
+    printf("Enter 2 numbers:\n Enter an operand (+, -, *, /): ");
+    scanf("%f %f %c", &a, &b, &c);
+
+    if (c == '+') {
+        d = a + b;
+        printf("%f + %f = %f", a, b, d);
+    } else if (c == '-') {
+        d = a - b;
+        printf("%f - %f = %f", a, b, d);
+    } else if (c == '/') {
+        d = a / b;
+        printf("%f / %f = %f", a, b, d);
+    } else if (c == '*') {
+        d = a * b;
+        printf("%f * %f = %f", a, b, d);
+    } else {
+        printf("Enter a correct operand!");
+    }
+
+    return EXIT_SUCCESS;
+}
+
+    if (c == '+') {
+        d = a + b;
+        printf("%f + %f = %f", a, b, d);
+    } else if (c == '-') {
+        d = a - b;
+        printf("%f - %f = %f", a, b, d);
+    } else if (c == '/') {
+        d = a / b;
+        printf("%f / %f = %f", a, b, d);
+    } else if (c == '*') {
+        d = a * b;
+        printf("%f * %f = %f", a, b, d);
+    } else {
+        printf("Enter a correct operand!");
+    }
+
+    return EXIT_SUCCESS;
+}
