@@ -1,1 +1,43 @@
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    int arr1[2][2],arr2[2][2];
+    printf("Enter the elements of the 1st matrix:\n");
+    fflush(stdout);  // Ensure output is printed before scanf
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("Enter a%d%d: ", i, j);
+            fflush(stdout);  // Ensure the prompt is printed before reading input
+            scanf("%d", &arr1[i][j]);
+            fflush(stdin);
+        }
+    }
+
+    printf("Enter the elements of the 2nd matrix:\n");
+        fflush(stdout);  // Ensure output is printed before scanf
+
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                printf("Enter a%d%d: ", i, j);
+                fflush(stdout);  // Ensure the prompt is printed before reading input
+                scanf("%d", &arr2[i][j]);
+                fflush(stdin);
+            }
+        }
+
+        printf("Sum of the 2 matrix:\n");
+               fflush(stdout);  // Ensure output is printed before scanf
+
+               for (int i = 0; i < 2; i++) {
+                   for (int j = 0; j < 2; j++) {
+                	   printf("Element a%d%d: %d \n",i,j,(arr1[i][j]+arr2[i][j]));
+                	   fflush(stdout);
+                   }
+               }
+
+
+    return 0;
+}
