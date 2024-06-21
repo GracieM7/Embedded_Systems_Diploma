@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int no,e;
+	printf("Enter number of elements:");
+	fflush(stdout);
+	scanf("%d",&no);
+
+	int arr[no];
+
+		printf("Enter elements of the array:\n");
+		fflush(stdout);
+		for(int i=0;i<no;i++){
+			scanf("%d",&arr[i]);
+		}
+
+	printf("Enter elements to be searched:");
+	fflush(stdout);
+
+	scanf("%d",&e);
+
+	for(int i=0;i<no;i++){
+		if(e==arr[i]){
+			printf("Number found at the location: %d ",i+1);
+			fflush(stdout);
+
+			break;
+		}
+	}
+
+
+
+    return 0;
+}
